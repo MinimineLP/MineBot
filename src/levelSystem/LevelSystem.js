@@ -6,19 +6,9 @@ const yaml = require("../YAML.js");
 module.exports = {
   install(client) {
     client.on("message", onMessage);
-
-    for ( let g of client.guilds ) {
-      var guild = g[1];
-      for( let c of guild.channels){
-        channel = c[1];
-        if(channel.type == voice){
-          channel.on("")
-        }
-      }
-    }
-
     return client;
   },
+  onMessage: onMessage,
   setXP: setXP,
   getXP: getXP,
   addXP: addXP,
@@ -45,8 +35,10 @@ function checkLevelUp(user, guild, channel) {
   var xp = getXP(user, guild);
   var level = getLevel(user, guild);
 
-  if(xp>=level*level) {
-    removeXP(user,level*level,guild);
+  var needxp = Math.floor(level * Math.sqrt(Math.sqrt(Math.sqrt(level)))*10);
+
+  if(xp>=needxp) {
+    removeXP(user,needxp,guild);
     addLevel(user,1,guild);
     embeds.info(channel, messages.get("levelup").replaceAll("%user%", user).replaceAll('%level%', getLevel(user, guild)), "Levelup!");
     checkLevelUp(user, guild);
