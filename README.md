@@ -3,7 +3,7 @@
 [MineBot](github.com/MinimineLP/MineBot),
 a discord managing bot.
 
-**Note: **We would advise you to use our [html documentation](Docs).
+**Note:** We would advise you to use our [html documentation](Docs).
 
 ## Installing
 
@@ -35,7 +35,7 @@ We would advise you to use our [html documentation](Docs). It will be automatica
 
 12\. Go [here](https://discordapp.com/developers/applications/me), create an Application and type in the TOKEN in the bot in the console, when you asked for it.
 
-13\. Replace in this Link the \[ID\] with your bots / applications id: **https://discordapp.com/oauth2/authorize?client_id=\[ID\]&scope=bot&permissions=2146958591** and over this link add the bot to your server.
+13\. Replace in this Link the \[ID\] with your bots / applications id: **https://discordapp.com/oauth2/authorize?client_id=[ID]&scope=bot&permissions=2146958591** and over this link add the bot to your server.
 
 14\. Enable Developer options on on your Discord account and copy your user id, and type it in the console. Now you will be asked for the email. Type in the Mail address of our futured createted google account! At last type in our api key that we generad at point 8
 
@@ -69,7 +69,7 @@ We would advise you to use our [html documentation](Docs). It will be automatica
 
 11\. Go [here](https://discordapp.com/developers/applications/me), create an Application and type in the TOKEN in the bot in the console, when you asked for it.
 
-12\. Replace in this Link the \[ID\] with your bots / applications id: **https://discordapp.com/oauth2/authorize?client_id=\[ID\]&scope=bot&permissions=2146958591** and over this link add the bot to your server.
+12\. Replace in this Link the \[ID\] with your bots / applications id: **https://discordapp.com/oauth2/authorize?client_id=[ID]&scope=bot&permissions=2146958591** and over this link add the bot to your server.
 
 13\. Enable Developer options on on your Discord account and copy your user id, and type it in the console. Now you will be asked for the email. Type in the Mail address of our futured createted google account! At last type in our api key that we generad at point 7
 
