@@ -1,0 +1,23 @@
+div#content .copy {
+  color: #fff;
+  background-color: rgba(0,0,0,0.1);
+  border: none;
+  width: auto;
+  padding: 5px;
+  border-radius: 3px;
+}
+div#content .copy:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.tooltiptext {
+    width: 120px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    height: 20px;
+    font-family: sans-serif;
+    transform: translate(-50%,0px);
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+
+    <!-- Others -->
+    <link rel="icon" href="images/ws_logo.png"></link>
+
+    <!-- Styleseets -->
+    <link rel="stylesheet" href="css/content.css"></link>
+    <link rel="stylesheet" href="css/copyinput.css"></link>
+    <link rel="stylesheet" href="css/discord-popup.css"></link>
+    <link rel="stylesheet" href="css/sidebar.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
+
+    <!-- Scripts -->
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/GETManager.js"></script>
+    <script src="javascript/contentfix.js"></script>
+    <script src="javascript/links.js"></script>
+    <script src="javascript/tablemanager.js"></script>
+    <script src="javascript/discord-popup.js"></script>
+    <script src="javascript/show_content.js"></script>
+    <script src="javascript/copyinput.js"></script>
+  </head>
+  <body>
+    <div id="sidebar">
+      <ul>
+        <li>
+          <p>General</p>
+          <ul>
+            <li class="link" href="?noinvite=true&location=get"><p>Get Bot</p></li>
+            <li class="link" href="?noinvite=true&location=commands"><p>Commands + Permissions</p></li>
+          </ul>
+        </li>
+        <li>
+          <p>License</p>
+          <ul>
+            <li class="link" href="?noinvite=true&location=MIT"><p>MIT License</p></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+      <div id="get" style="display: none;">
+        <h3>Get the bot?</h3>
+        <div>
+          <h4>Windows</h4>
+          <p>1.  Install Python: <a href="https://www.python.org/downloads/">Python</a></p>
+          <p>2.  Install NodeJS: <a href="https://nodejs.org/en/">NodeJS</a></p>
+          <p>3.  Download MineBot: <a href="https://github.com/MinimineLP/MineBot">MineBot</a> (or, if you have installed git type <input value="git clone https://github.com/MinimineLP/MineBot" class="copy" style="width:285px" readonly/> in your command prompt)</p>
+          <p>4   Go <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en-GB&flowName=GlifWebSignIn&flowEntry=SignUp">here</a> and create a google account.</p>
+          <p>5.  Go <a href="https://console.developers.google.com/apis">here</a> click at select Project and then on the '+'</a>
+          <p>6.  Now select your project and enable Youtube data Api v3 and gmail api</p>
+          <p>7.  Now go left on access data and create an api key and a OAuth 2.0-Client-ID</p>
+          <p>8   Now go on the Auth 2.0-Client-ID and lick download json. Call the file client_secret.json and do it into the bots folder. Now remember the api key, you will be asked for it in the installer when you first start the bot!</p>
+          <p>9.  Open the folder with any command prompt and type <input value="pip install --upgrade google-api-python-client" class="copy" style="width:265px" readonly/> to install the python package</p>
+          <p>10. Now install the npm packages <input value="MineBot install" class="copy" style="width:86px" readonly/></p>
+          <p>11. Now the bot is installed. Now just type <input value="MineBot start" class="copy" style="width:80px" readonly/></a>, so it will be started. If you want it to automatically restart, type MineBot <input value="MineBot loopstart" style="width:105px" class="copy" readonly/></p>
+          <p>12. Go <a href="https://discordapp.com/developers/applications/me">here</a>, create an Application and type in the TOKEN in the bot in the console, when you asked for it.</p>
+          <p>13. Replace in this Link the [ID] with your bots / applications id: <input value="https://discordapp.com/oauth2/authorize?client_id=[ID]&scope=bot&permissions=2146958591" class="copy" style="width:547px" readonly/> and over this link add the bot to your server.
+          <p>14. Enable Developer options on on your Discord account and copy your user id, and type it in the console. Now you will be asked for the email. Type in the Mail address of our futured createted google account! At last type in our api key that we generad at point 8</p>
+          <p>15  Now everything is ready. You mustn't do that at every start of the bot. If it stops just type<input value="MineBot start" class="copy" style="width:80px" readonly/></a> or <input value="MineBot loopstart" style="width:105px" class="copy" readonly/></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="install_linux">
+          <h4>Linux and Raspbian</h4>
+          <p>1. Type <input value="sudo apt-get install node nodejs npm python3 python-pip git screen -y" class="copy" style="width:411px" readonly/> in your command prompt to instal the base programms.</p>
+          <p>2. Type <input value="git clone https://github.com/MinimineLP/MineBot" class="copy" style="width:285px" readonly/> in your command prompt to download the bot.</p>
+          <p>3  Go <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en-GB&flowName=GlifWebSignIn&flowEntry=SignUp">here</a> and create a google account.</p>
+          <p>4. Go <a href="https://console.developers.google.com/apis">here</a> click at select Project and then on the '+'</a>
+          <p>5. Now select your project and enable Youtube data Api v3 and gmail api</p>
+          <p>6. Now go left on access data and create an api key and a OAuth 2.0-Client-ID</p>
+          <p>7  Now go on the Auth 2.0-Client-ID and lick download json. Call the file client_secret.json and do it into the bots folder. Now remember the api key, you will be asked for it in the installer when you first start the bot!</p>
+          <p>8. Type <input value="pip install --upgrade google-api-python-client" class="copy" style="width:265px" readonly/> in your command prompt to install the python package.</p>
+          <p>9. Type <input value="npm install" class="copy" style="width:64px" readonly/> in your command prompt to install the python packages.</p>
+          <p>10. To start type <input value="screen -L -S MineBot bash start.sh" class="copy" style="width:205px" readonly/> in your command prompt.</p>
+          <p>11. Go <a href="https://discordapp.com/developers/applications/me">here</a>, create an Application and type in the TOKEN in the bot in the console, when you asked for it.</p>
+          <p>12. Replace in this Link the [ID] with your bots / applications id: <input value="https://discordapp.com/oauth2/authorize?client_id=[ID]&scope=bot&permissions=2146958591" class="copy" style="width:547px" readonly/> and over this link add the bot to your server.
+          <p>13. Enable Developer options on on your Discord account and copy your user id, and type it in the console. Now you will be asked for the email. Type in the Mail address of our futured createted google account! At last type in our api key that we generad at point 7</p>
+          <p>14  Now everything is ready. You mustn't do that at every start of the bot. If it stops just type <input value="screen -L -S MineBot bash start.sh" class="copy" style="width:205px" readonly/></p>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div id="commands" style="display: none;">
+      <h3>Commands + Permissions</h3>
+      <table class="tosort">
+        <tr class="top">
+          <th>Command</th>
+          <th>Permission</th>
+        </tr>
+        <tr>
+          <th>say &lt;message></th>
+          <th>usefulcommands.say</th>
+        </tr>
+        <tr>
+          <th>mute &lt;user> &lt;time (in sec)> <reason></th>
+          <th>moderation.mute</th>
+        </tr>
+        <tr>
+          <th>clear &lt;number></th>
+          <th>usefulcommands.clear</th>
+        </tr>
+        <tr>
+          <th>bahn</th>
+          <th>funny.bahn</th>
+        </tr>
+        <tr>
+          <th>confirm &lt;code></th>
+          <th>stuff.confirmmail</th>
+        </tr>
+        <tr>
+          <th>linkmail &lt;mail></th>
+          <th>stuff.linkmail</th>
+        </tr>
+        <tr>
+          <th>money</th>
+          <th>money.money</th>
+        </tr>
+        <tr>
+          <th>music play <url></th>
+          <th>stuff.music.play</th>
+        </tr>
+        <tr>
+          <th>
+            permission user add &lt;user> &lt;permission><br>
+            permission user remove &lt;user> &lt;permission><br>
+            permission user test &lt;user> &lt;permission><br>
+            permission role add &lt;user> &lt;permission><br>
+            permission role remove &lt;user> &lt;permission><br>
+            permission role test &lt;user> &lt;permission><br>
+          </th>
+          <th>
+            management.permission.user.add<br>
+            management.permission.user.remove<br>
+            management.permission.user.test<br>
+            management.permission.role.add<br>
+            management.permission.role.remove<br>
+            management.permission.role.test
+          </th>
+        </tr>
+        <tr>
+          <th>rip &lt;name>;(reason)</th>
+          <th>funny.rip</th>
+        </tr>
+      </table>
+    </div>
+    <div id="MIT" style="display: none;">
+      <h3>MIT License</h3>
+      <p>This Product ist licensed under a MIT license. Here you have the english orginal</p>
+      <p>Copyright (c) 2017-2018 Minimine<br>
+      Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br>
+      <br>
+      The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br>
+      <br>
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+    </div>
+  </div>
+  <div id="discord-popup">
+    <p class="title">Need Help? Go on our Discord!</p>
+    <p class="close" onclick="document.getElementById('discord-popup').style.display = 'none';">X</p>
+    <iframe src="https://discordapp.com/widget?id=429282560460193793&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"/>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "MineBot",
+  "version": "0.0.1",
+  "description": "A powerfull discordbot with many cool fatures.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "debug": "node src/main.js debug"
+  },
+  "author": "Nicolas Schmidt",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "discord.js": "^11.2.1",
+    "js-yaml": "^3.11.0",
+    "opusscript": "^0.0.6",
+    "readline-sync": "^1.4.9",
+    "sync-request": "^6.0.0",
+    "ytdl-core": "^0.20.2"
+  }
+}
