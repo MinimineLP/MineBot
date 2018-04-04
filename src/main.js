@@ -1,15 +1,17 @@
 /*
+ *
  *  MineBot Main file
  *  Licensed under MIT, see LICENSE file
  *  Copyright (c) Minimine 2017-2018
+ *
  */
 
  //Run external pre-inits
- require("./fixPrototypes");                     // Fix the object Prototypes
- require("./ConfigurationCreator.js");           // Run the ConfigurationCreator
+ require("./fixPrototypes");                                  // Fix the object Prototypes
+ require("./ConfigurationCreator.js");                        // Run the ConfigurationCreator
 
 //Imports
-const discord = require("discord.js");                            // Import the discord.js library
+const discord = require("discord.js");                        // Import the discord.js library
 const commands = require("./commands.js");                    // Import the command manager
 const yaml = require("./YAML.js");                            // Import the YAML interface
 const MoneySystem = require("./moneySystem/MoneySystem.js");  // Import the MoneySystem
@@ -35,6 +37,7 @@ client = LevelSystem.install(client);               // Install the LevelSystem o
 
 //Register events
 client.on("ready", function() {                     // Ready event. Will be executed when bot is online
+  client.user.setStatus("online");                  // Set online Status
   filesystem.create(client.guilds);                 // Create the folder system that every guild has own configuration possibilitys and saves
   console.log(messages.get("onReady"));             // Log, that the bot is online
 });

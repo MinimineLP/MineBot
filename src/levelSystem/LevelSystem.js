@@ -20,6 +20,8 @@ module.exports = {
 }
 
 function onMessage(msg) {
+  if(msg.channel.type == "dm" || msg.channel.type == "group" )return;
+
   var messages = yaml.createConfig(`servers/${msg.guild.id}/messages.yml`);
   var config = yaml.createConfig(`servers/${msg.guild.id}/config.yml`);
 

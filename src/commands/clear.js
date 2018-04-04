@@ -1,3 +1,10 @@
+/*
+ *
+ * Copyright Minimine 2018, Licensed under MIT
+ *
+ */
+ 
+// Imports
 const filesystem = require("fs");
 const yaml = require("../YAML.js");
 const embeds = require("../embed.js");
@@ -26,7 +33,7 @@ module.exports = {
     msg.channel.fetchMessages({ limit: number }).then(function(messages) {
 
       var currentdate = new Date();
-      var deletable = 0;
+      var deletable = -1;
       var MAX_AGE = 2 * 7 * 24 * 60 * 60 * 1000;
 
 

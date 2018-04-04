@@ -2,6 +2,9 @@ const filesystem = require("fs");
 const embeds = require("./embed.js");
 const yaml = require("./YAML.js");
 
+//global messages config
+var global_messages = yaml.createConfig(`messages.yml`);
+
 const commands = {
   bahn: require("./commands/bahn.js"),
   clear: require("./commands/clear.js"),
@@ -13,7 +16,8 @@ const commands = {
   mute: require("./commands/mute.js"),
   permission: require("./commands/permission.js"),
   rip: require("./commands/rip.js"),
-  say: require("./commands/say.js")
+  say: require("./commands/say.js"),
+  stop: require("./commands/stop.js")
 };
 
 //Setup help
@@ -42,6 +46,16 @@ module.exports = {
     }
   },
   onMessage(msg) {
+
+    if(msg.content.startsWith("-stop") || msg.content.startsWith("!stop") || msg.content.startsWith("stop")) {
+      commands.stop.execute(null, null, msg)
+    }
+
+    if(msg.channel.type == "dm" || msg.channel.type == "group" ) {
+      if(msg.author.id != msg.client.user.id) embeds.error(msg.channel, global_messages.get("not_programmed_for_answering_private_messages"));
+      return;
+    }
+
     var messages = yaml.createConfig(`servers/${msg.guild.id}/messages.yml`);
     var guildconfig = yaml.createConfig(`servers/${msg.guild.id}/config.yml`);
 

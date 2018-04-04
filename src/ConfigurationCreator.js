@@ -13,4 +13,7 @@ config.save();
 
 var messages = yaml.createConfig(`messages.yml`);
 messages.setStandart(`onReady`, `Connected!`);
+messages.setStandart(`no_permission`, `Sorry, %user% but you aren't permitted to use this command!`);
+messages.setStandart(`shutdown`, `Shutting down...`);
+messages.setStandart(`not_programmed_for_answering_private_messages`, `Sorry, but I am not programmed for answering private Messages. You can just type a few commands in private channels to me, for example -stop. But this command is just for global Admins!`);
 messages.save();

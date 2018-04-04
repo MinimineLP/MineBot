@@ -34,22 +34,23 @@ function play(user, url) {
 }
 
 function next() {
-    if(playing != null) playing.end();
-    if(toplay[pos]){
-      var stream = ytdl(toplay[pos].url, { filter : 'audioonly' });
-      toplay[pos].member.voiceChannel.join().then(function(connection) {
-        var dispatcher = connection.playStream(stream, streamOptions).on("end", function(reason){
-          playing = null;
-          next();
-        });
-        playing = dispatcher;
+  if(playing != null) playing.end();
+  if(toplay[pos]){
+    var stream = ytdl(toplay[pos].url, { filter : 'audioonly' });
+    toplay[pos].member.voiceChannel.join().then(function(connection) {
+      var dispatcher = connection.playStream(stream, streamOptions).on("end", function(reason){
+        connection.disconnect();
+        playing = null;
+        next();
       });
-      var posi = pos;
-      posi++;
-      pos = posi;
-    } else {
-      playing = null;
-    }
+      playing = dispatcher;
+    });
+    var posi = pos;
+    posi++;
+    pos = posi;
+  } else {
+    playing = null;
+  }
 }
 
 module.exports = {

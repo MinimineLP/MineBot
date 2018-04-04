@@ -28,6 +28,9 @@ div#content::-webkit-scrollbar-thumb{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: rgb(35,35,35);
 }
+div#content a {
+  color: rgb(200, 200, 200);
+}
 
 div#content table {
   background-color: #000;

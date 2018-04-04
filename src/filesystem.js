@@ -38,7 +38,6 @@ module.exports = {
       messages.setStandart(`mail_already_linked_with_account`, `This mail address is already linked with your account!`);
       messages.setStandart(`command_needs_min_one_argument`, `This command needs min one Argument!`);
       messages.setStandart(`found_coin_while_writing_message`, `Oh... %user% found %number% coin(s) under his Keyboard while writing a message!`);
-      messages.setStandart(`found_coin_joining_empty_channel`, `Oh... %user% found %number% coin(s) joining the empty voice channel %name%!`);
       messages.setStandart(`levelup`, `Wow, %user%, you are already on level %level%!`);
       messages.setStandart(`no_permission`, `Sorry, %user% but you aren't permitted to use this command!`);
       messages.setStandart(`error_occured`, `Oh no, an error occured! Are you sure that you done everything correctly?`);
@@ -79,6 +78,8 @@ module.exports = {
       help.setStandart(`rip_description`, `Shows a rip message. This is a joke command! Type %prefix%help mute for more information`);
       help.setStandart(`say_help`, `Type %prefix%say <message> to say something with the bot. The message can be longer than one word.`);
       help.setStandart(`say_description`, `Says something with the bot. This is a joke command! Type %prefix%help mute for more information`);
+      help.setStandart(`stop_help`, `Type %prefix%stop stops the bot. The permission can't be given from guilds, just from the bot owner.`);
+      help.setStandart(`stop_description`, `Stops the bot.Type %prefix%stop mute for more information`);
       help.save();
 
       if(!fs.existsSync(`servers/${gid}/rip_msgs.json`))fs.writeFileSync(`servers/${gid}/rip_msgs.json`, "{}", 'utf-8');;
